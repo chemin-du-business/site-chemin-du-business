@@ -1,0 +1,45 @@
+/* App specific styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(11, 61, 92, 0.2);
+  color: #0B3D5C;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #0B3D5C;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B3D5C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #082B42;
+}
+
+/* Print styles */
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+}
