@@ -1,4 +1,4 @@
-import { Award, Building2, MapPin, Phone, Mail, FileText, ArrowRight, Users, Target, Lightbulb, TrendingUp, Clock } from 'lucide-react';
+import { Award, Building2, Phone, Mail, FileText, ArrowRight, Users, Target, Lightbulb, TrendingUp, Clock } from 'lucide-react';
 import { legalInfo, contactInfo } from '@/data/sessions';
 import { horairesSupport, calendlyLink } from '@/data/config';
 
