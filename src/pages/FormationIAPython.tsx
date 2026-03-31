@@ -101,7 +101,7 @@ const FormationIAPython = () => {
             </div>
             <div className="mt-4 pt-4 border-t text-center">
               <span className="text-sm text-gray-500">Financement : </span>
-              <span className="font-medium text-[#0B3D5C]">CPF / OPCO / Personnel</span>
+              <span className="font-medium text-[#0B3D5C]">CPF / Personnel</span>
             </div>
           </div>
         </div>

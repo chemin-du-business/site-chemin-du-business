@@ -142,16 +142,6 @@ const APropos = () => {
                     <p className="font-medium text-[#0B3D5C]">{legalInfo.nda}</p>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-4 md:col-span-2">
-                  <div className="w-10 h-10 rounded-lg bg-[#0B3D5C]/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-[#0B3D5C]" />
-                  </div>
-                  <div>
-                    <span className="text-sm text-gray-500">Adresse</span>
-                    <p className="font-medium text-[#0B3D5C]">{legalInfo.adresse}</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

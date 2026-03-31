@@ -103,7 +103,7 @@ const MentionsLegales = () => {
                 <p className="text-gray-700 text-sm">
                   CHEMIN DU BUSINESS est un organisme de formation certifié Qualiopi, 
                   garantissant le respect des critères qualité définis par la loi pour 
-                  les actions de formation, le bilan de compétences, la VAE et l'apprentissage.
+                  les actions de formation.
                 </p>
               </div>
             </div>
