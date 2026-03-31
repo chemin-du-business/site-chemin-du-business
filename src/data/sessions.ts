@@ -14,48 +14,34 @@ export const prochainesSessions: Session[] = [
   {
     id: 'wp-001',
     formation: 'WordPress (Tosa)',
-    date: '15/04/2025',
+    date: '23/05/2026',
     modalite: 'Distanciel',
     statut: 'disponible',
-    places: 8
-  },
-  {
-    id: 'wp-002',
-    formation: 'WordPress (Tosa)',
-    date: '12/05/2025',
-    modalite: 'Distanciel',
-    statut: 'disponible',
-    places: 10
+    places: 15
   },
   {
     id: 'wp-003',
     formation: 'WordPress (Tosa)',
-    date: '09/06/2025',
-    modalite: 'Distanciel',
-    statut: 'demande',
+    date: '23/05/2026',
+    modalite: 'Hybride',
+    statut: 'disponible',
+    places: 15
   },
   {
     id: 'ia-001',
     formation: 'IA & Python (Tosa)',
-    date: '22/04/2025',
+    date: '23/05/2025',
     modalite: 'Hybride',
     statut: 'disponible',
-    places: 6
-  },
-  {
-    id: 'ia-002',
-    formation: 'IA & Python (Tosa)',
-    date: '19/05/2025',
-    modalite: 'Distanciel',
-    statut: 'disponible',
-    places: 8
+    places: 15
   },
   {
     id: 'ia-003',
     formation: 'IA & Python (Tosa)',
-    date: '16/06/2025',
-    modalite: 'Hybride',
-    statut: 'demande',
+    date: '23/05/2025',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
   }
 ];
 
@@ -63,7 +49,7 @@ export const prochainesSessions: Session[] = [
 export const indicateurs = {
   satisfaction: 4.5,
   reussite: 100,
-  derniereMiseAJour: '01/03/2025'
+  derniereMiseAJour: '31/03/2026'
 };
 
 // Informations de contact

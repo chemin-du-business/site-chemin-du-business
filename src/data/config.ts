@@ -22,7 +22,7 @@
 
 export const videoConfig = {
   // URL de la vidéo
-  embedUrl: "/videos/Design-sans-titre.mp4", // ← Remplace par ton lien
+  embedUrl: "/videos/download.mp4", // ← Remplace par ton lien
   
   // Type de vidéo: "embed" (YouTube/Vimeo) ou "mp4" (fichier direct)
   type: "mp4",
