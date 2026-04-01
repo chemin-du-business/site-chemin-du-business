@@ -22,7 +22,7 @@
 
 export const videoConfig = {
   // URL de la vidéo
-  embedUrl: "/videos/download.mp4", // ← Remplace par ton lien
+  embedUrl: "https://auth.cdbproduitia.com/storage/v1/object/public/video-public/download.mp4", // ← Remplace par ton lien
   
   // Type de vidéo: "embed" (YouTube/Vimeo) ou "mp4" (fichier direct)
   type: "mp4",
