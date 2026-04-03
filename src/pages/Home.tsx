@@ -23,6 +23,10 @@ const Home = () => {
               <Award className="w-4 h-4 text-[#F5A623]" />
               <span>Organisme de formation certifié Qualiopi</span>
             </div>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6 ml-2">
+              <Wallet className="w-4 h-4 text-[#2EC4B6]" />
+              <span>Formations éligibles au financement CPF </span>
+            </div>
             <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
               Formations digitales professionnelles et certifiantes
             </h1>
