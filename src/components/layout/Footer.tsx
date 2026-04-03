@@ -28,6 +28,10 @@ const Footer = () => {
               <Award className="w-5 h-5 text-[#F5A623]" />
               <span>Certifié Qualiopi</span>
             </div>
+            <div className="flex items-center gap-2 text-sm text-gray-300 mt-2">
+              <CheckCircle className="w-5 h-5 text-[#2EC4B6]" />
+              <span>Formations éligibles au CPF</span>
+            </div>
           </div>
 
           {/* Navigation */}
