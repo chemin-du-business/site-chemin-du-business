@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Phone, Mail, Clock, MessageSquare, Calendar, Users, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
@@ -36,6 +37,32 @@ const Contact = () => {
         return 'Remplissez le formulaire pour demander votre inscription à une formation.';
       default: 
         return 'Vous souhaitez obtenir des informations, demander un devis, connaître les prochaines dates ou prendre rendez-vous ? Utilisez le formulaire ci-dessous.';
+    }
+  };
+
+  useEffect(() => {
+    const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
+    if (!existingLink) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(link);
+    }
+
+    const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: calendlyLink,
+      });
     }
   };
 
@@ -181,14 +208,13 @@ const Contact = () => {
               <p className="text-gray-600 mb-8">
                 Choisissez la formation qui vous intéresse et indiquez la date souhaitée pour un échange personnalisé.
               </p>
-              <a 
-                href={calendlyLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="btn-primary inline-flex items-center gap-2"
               >
                 Prendre rendez-vous
-              </a>
+              </button>
             </div>
           </div>
         </section>

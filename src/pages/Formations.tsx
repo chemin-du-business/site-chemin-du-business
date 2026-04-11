@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Award, Clock, FileText, Users } from 'lucide-react';
 import { calendlyLink } from '@/data/config';
@@ -6,6 +7,32 @@ const Formations = () => {
   // Fonction pour scroll en haut de page
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
+    if (!existingLink) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(link);
+    }
+
+    const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: calendlyLink,
+      });
+    }
   };
 
   const formations = [
@@ -157,14 +184,13 @@ const Formations = () => {
                 Demander des informations
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a 
-                href={calendlyLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="btn-secondary flex items-center justify-center gap-2"
               >
                 Prendre rendez-vous
-              </a>
+              </button>
             </div>
           </div>
         </div>

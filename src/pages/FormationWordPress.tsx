@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
@@ -6,6 +7,32 @@ import { calendlyLink } from '@/data/config';
 
 const FormationWordPress = () => {
   const wordpressSessions = prochainesSessions.filter(s => s.formation.includes('WordPress'));
+
+  useEffect(() => {
+    const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
+    if (!existingLink) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(link);
+    }
+
+    const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: calendlyLink,
+      });
+    }
+  };
 
   const objectifs = [
     'Comprendre le fonctionnement de WordPress',
@@ -56,14 +83,13 @@ const FormationWordPress = () => {
                 Demander un devis
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a 
-                href={calendlyLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="btn-outline-orange flex items-center justify-center gap-2"
               >
                 Prendre rendez-vous
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -386,14 +412,13 @@ const FormationWordPress = () => {
                 Demander un devis
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a 
-                href={calendlyLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="btn-secondary flex items-center justify-center gap-2"
               >
                 Prendre rendez-vous
-              </a>
+              </button>
             </div>
           </div>
         </div>

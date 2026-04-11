@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Award, Building2, Phone, Mail, FileText, ArrowRight, Users, Target, Lightbulb, TrendingUp, Clock } from 'lucide-react';
 import { legalInfo, contactInfo } from '@/data/sessions';
 import { horairesSupport, calendlyLink } from '@/data/config';
@@ -20,6 +21,32 @@ const APropos = () => {
       icone: <TrendingUp className="w-6 h-6" />
     }
   ];
+
+  useEffect(() => {
+    const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
+    if (!existingLink) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(link);
+    }
+
+    const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: calendlyLink,
+      });
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -211,15 +238,14 @@ const APropos = () => {
             <p className="text-blue-100 mb-8">
               Notre équipe est à votre disposition pour vous accompagner
             </p>
-            <a 
-              href={calendlyLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={openCalendly}
               className="btn-primary inline-flex items-center gap-2"
             >
               Prendre rendez-vous
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
           </div>
         </div>
       </section>
