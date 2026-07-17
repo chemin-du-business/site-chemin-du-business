@@ -14,7 +14,7 @@ export const prochainesSessions: Session[] = [
   {
     id: 'wp-001',
     formation: 'WordPress (Tosa)',
-    date: '23/05/2026',
+    date: '15/08/2026',
     modalite: 'Distanciel',
     statut: 'disponible',
     places: 15
@@ -22,7 +22,7 @@ export const prochainesSessions: Session[] = [
   {
     id: 'wp-003',
     formation: 'WordPress (Tosa)',
-    date: '23/05/2026',
+    date: '15/08/2026',
     modalite: 'Hybride',
     statut: 'disponible',
     places: 15
@@ -30,7 +30,7 @@ export const prochainesSessions: Session[] = [
   {
     id: 'ia-001',
     formation: 'IA & Python (Tosa)',
-    date: '23/05/2025',
+    date: '15/08/2026',
     modalite: 'Hybride',
     statut: 'disponible',
     places: 15
@@ -38,7 +38,7 @@ export const prochainesSessions: Session[] = [
   {
     id: 'ia-003',
     formation: 'IA & Python (Tosa)',
-    date: '23/05/2025',
+    date: '15/08/2026',
     modalite: 'Distanciel',
     statut: 'disponible',
     places: 15
