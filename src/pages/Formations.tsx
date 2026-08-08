@@ -74,7 +74,7 @@ const Formations = () => {
               Nos formations
             </h1>
             <p className="text-lg text-blue-100 leading-relaxed">
-              Découvrez nos formations certifiantes orientées pratique, conçues pour développer des compétences concrètes et applicables rapidement.
+              Découvrez nos formations professionnelles orientées pratique, conçues pour développer des compétences concrètes et applicables rapidement.
             </p>
           </div>
         </div>
@@ -97,7 +97,7 @@ const Formations = () => {
                       {formation.titre}
                     </h2>
                     <span className="badge-certification">
-                      Certification {formation.certification}
+                      Évaluation {formation.certification}
                     </span>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const Formations = () => {
                       <Award className="w-4 h-4 text-gray-600" />
                     </div>
                     <div>
-                      <span className="font-medium text-gray-700">Certification :</span>
+                      <span className="font-medium text-gray-700">Évaluation :</span>
                       <span className="text-gray-600 ml-1">{formation.rs} – {formation.niveau}</span>
                     </div>
                   </div>

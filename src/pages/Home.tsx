@@ -57,7 +57,7 @@ const Home = () => {
               <span>Formations éligibles au financement CPF </span>
             </div>
             <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
-              Formations digitales professionnelles et certifiantes
+              Formations digitales professionnelles et évaluées
             </h1>
             <p className="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed">
               Développez des compétences concrètes, immédiatement mobilisables dans votre activité professionnelle.
@@ -90,7 +90,7 @@ const Home = () => {
               Nos formations
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Découvrez nos formations certifiantes, conçues pour développer des compétences concrètes et applicables rapidement.
+              Découvrez nos formations professionnelles, conçues pour développer des compétences concrètes et applicables rapidement.
             </p>
           </div>
 
@@ -103,9 +103,9 @@ const Home = () => {
               <h3 className="text-xl font-semibold text-[#0B3D5C] mb-2">
                 Créer et gérer un site web avec WordPress
               </h3>
-              <span className="badge-certification mb-4 inline-block">Certification Tosa</span>
+              <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
-                Créez un site web professionnel et gérez-le en autonomie. Certification RS6965 – Niveau 1.
+                Créez un site web professionnel et gérez-le en autonomie. Évaluation RS6965 – Niveau 1.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
@@ -129,9 +129,9 @@ const Home = () => {
               <h3 className="text-xl font-semibold text-[#0B3D5C] mb-2">
                 Intelligence Artificielle & Python – Initiation
               </h3>
-              <span className="badge-certification mb-4 inline-block">Certification Tosa</span>
+              <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
-                Comprenez l'IA et automatisez des tâches simples avec Python. Certification RS6962 – Niveau 1.
+                Comprenez l'IA et automatisez des tâches simples avec Python. Évaluation RS6962 – Niveau 1.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
