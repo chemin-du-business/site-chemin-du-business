@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code } from 'lucide-react';
+import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code, Shield } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
 import { prochainesSessions, indicateurs, contactInfo } from '@/data/sessions';
 import { calendlyLink } from '@/data/config';
@@ -334,6 +334,13 @@ const FormationIAPython = () => {
                       <div className="flex items-center gap-1">
                         <Star className="w-4 h-4 text-[#F5A623] fill-[#F5A623]" />
                         <span className="font-semibold text-[#0B3D5C]">{indicateurs.satisfaction} / 10</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-600 text-sm">Niveau 1 garanti</span>
+                      <div className="flex items-center gap-1">
+                        <Shield className="w-4 h-4 text-[#F5A623]" />
+                        <span className="font-semibold text-[#0B3D5C]">{indicateurs.niveau1Garanti}%</span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between">

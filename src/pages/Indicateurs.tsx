@@ -1,4 +1,4 @@
-import { Star, Users, Award, Calendar, CheckCircle, FileText, TrendingUp } from 'lucide-react';
+import { Star, Users, Award, Calendar, CheckCircle, FileText, TrendingUp, Shield } from 'lucide-react';
 import { indicateurs } from '@/data/sessions';
 
 const Indicateurs = () => {
@@ -21,7 +21,7 @@ const Indicateurs = () => {
       {/* Main Indicateurs */}
       <section className="py-16 bg-white">
         <div className="section-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Satisfaction */}
             <div className="bg-gradient-to-br from-[#0B3D5C] to-[#1A5A7A] rounded-2xl p-8 text-center text-white">
               <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
@@ -32,6 +32,19 @@ const Indicateurs = () => {
               <h2 className="text-xl font-semibold mb-2">Taux de satisfaction</h2>
               <p className="text-blue-100 text-sm">
                 Basé sur les évaluations des apprenants à l'issue de nos formations
+              </p>
+            </div>
+
+            {/* Niveau 1 garanti */}
+            <div className="bg-gradient-to-br from-[#F5A623] to-[#D68910] rounded-2xl p-8 text-center text-white">
+              <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-5xl font-bold mb-2">{indicateurs.niveau1Garanti}%</div>
+              <div className="text-2xl text-amber-100 mb-4">Niveau 1 validé</div>
+              <h2 className="text-xl font-semibold mb-2">Niveau 1 Tosa garanti</h2>
+              <p className="text-amber-100 text-sm">
+                De nos apprenants évalués valident au minimum le socle garanti de notre accompagnement
               </p>
             </div>
 
@@ -65,7 +78,7 @@ const Indicateurs = () => {
               Méthodologie de calcul
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#0B3D5C]/10 flex items-center justify-center">
@@ -84,13 +97,29 @@ const Indicateurs = () => {
 
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#F5A623]/10 flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-[#F5A623]" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-[#0B3D5C]">Niveau 1 Tosa garanti</h3>
+                </div>
+                <p className="text-gray-600 text-sm mb-4">
+                  100% de nos apprenants évalués valident au minimum le Niveau 1 Tosa, socle garanti de notre accompagnement. Ce niveau est atteint par la totalité des apprenants évalués à l'issue de la formation.
+                </p>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <CheckCircle className="w-4 h-4" />
+                  <span>Évaluations Tosa officielles</span>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#2EC4B6]/10 flex items-center justify-center">
                     <Award className="w-5 h-5 text-[#2EC4B6]" />
                   </div>
                   <h3 className="text-lg font-semibold text-[#0B3D5C]">Taux de dépassement du Niveau 1</h3>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">
-                  100% de nos apprenants évalués valident au minimum le Niveau 1 Tosa, socle garanti de notre accompagnement. Parmi eux, 24,4% (WordPress) vont au-delà et atteignent un niveau supérieur (Basique, Opérationnel ou Avancé), dont certains jusqu'à la certification officielle Tosa (Niveau 3 minimum).
+                  Parmi les apprenants ayant validé le Niveau 1, 24,4% (WordPress) vont au-delà et atteignent un niveau supérieur (Basique, Opérationnel ou Avancé), dont certains jusqu'à la certification officielle Tosa (Niveau 3 minimum).
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle className="w-4 h-4" />
