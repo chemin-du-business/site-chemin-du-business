@@ -113,7 +113,7 @@ const FormationIAPython = () => {
               <div className="flex items-center gap-3">
                 <Award className="w-5 h-5 text-[#F5A623]" />
                 <div>
-                  <span className="text-sm text-gray-500">Certification</span>
+                  <span className="text-sm text-gray-500">Évaluation</span>
                   <p className="font-medium text-[#0B3D5C]">RS6962 – Niveau 1</p>
                 </div>
               </div>
@@ -281,7 +281,7 @@ const FormationIAPython = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Certification Tosa Python (niveau 1)</span>
+                    <span className="text-gray-700">Évaluation Tosa Python (Niveau 1 validé)</span>
                   </li>
                 </ul>
               </div>
@@ -308,19 +308,19 @@ const FormationIAPython = () => {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
-                {/* Certification Card */}
+                {/* Évaluation Card */}
                 <div className="bg-gradient-to-br from-[#2EC4B6] to-[#1A9A8E] rounded-xl p-6 text-white">
                   <div className="flex items-center gap-3 mb-4">
                     <Cpu className="w-8 h-8" />
                     <Code className="w-8 h-8" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Certification</h3>
+                  <h3 className="text-lg font-semibold mb-2">Évaluation Tosa</h3>
                   <p className="text-teal-100 text-sm mb-4">
-                    RS6962 – Programmer et automatiser des tâches avec Python (Tosa) – Niveau 1
+                    Test Tosa RS6962 – Programmer et automatiser des tâches avec Python – Niveau 1 validé
                   </p>
                   <div className="flex items-center gap-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-white" />
-                    <span>Certification reconnue par l'État</span>
+                    <span>RS6962 enregistré à France Compétences</span>
                   </div>
                 </div>
 

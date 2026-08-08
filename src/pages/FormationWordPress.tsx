@@ -117,7 +117,7 @@ const FormationWordPress = () => {
               <div className="flex items-center gap-3">
                 <Award className="w-5 h-5 text-[#F5A623]" />
                 <div>
-                  <span className="text-sm text-gray-500">Certification</span>
+                  <span className="text-sm text-gray-500">Évaluation</span>
                   <p className="font-medium text-[#0B3D5C]">RS6965 – Niveau 1</p>
                 </div>
               </div>
@@ -284,7 +284,7 @@ const FormationWordPress = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Certification Tosa WordPress (niveau 1)</span>
+                    <span className="text-gray-700">Évaluation Tosa WordPress (Niveau 1 validé)</span>
                   </li>
                 </ul>
               </div>
@@ -311,16 +311,16 @@ const FormationWordPress = () => {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
-                {/* Certification Card */}
+                {/* Évaluation Card */}
                 <div className="bg-gradient-to-br from-[#0B3D5C] to-[#1A5A7A] rounded-xl p-6 text-white">
                   <Award className="w-10 h-10 text-[#F5A623] mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">Certification</h3>
+                  <h3 className="text-lg font-semibold mb-2">Évaluation Tosa</h3>
                   <p className="text-blue-100 text-sm mb-4">
-                    RS6965 – Créer et gérer des sites web avec WordPress (Tosa) – Niveau 1
+                    Test Tosa RS6965 – Créer et gérer des sites web avec WordPress – Niveau 1 validé
                   </p>
                   <div className="flex items-center gap-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span>Certification reconnue par l'État</span>
+                    <span>RS6965 enregistré à France Compétences</span>
                   </div>
                 </div>
 
