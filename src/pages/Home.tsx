@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Accessibility, Wallet, Calendar, Star, TrendingUp, CheckCircle, Globe, Cpu } from 'lucide-react';
+import { ArrowRight, Award, Accessibility, Wallet, Calendar, Star, TrendingUp, CheckCircle, Globe, Cpu, Shield } from 'lucide-react';
 import SessionCard from '@/components/SessionCard';
 import VideoSection from '@/components/VideoSection';
 import { prochainesSessions, indicateurs } from '@/data/sessions';
@@ -162,13 +162,21 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-[#0B3D5C] to-[#1A5A7A] rounded-2xl p-8 text-white text-center">
               <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-[#F5A623]" />
               </div>
               <div className="text-4xl font-bold mb-2">{indicateurs.satisfaction} / 10</div>
               <p className="text-blue-100">Taux de satisfaction</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-[#F5A623] to-[#D68910] rounded-2xl p-8 text-white text-center">
+              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">{indicateurs.niveau1Garanti}%</div>
+              <p className="text-amber-100">Niveau 1 Tosa garanti</p>
             </div>
 
             <div className="bg-gradient-to-br from-[#2EC4B6] to-[#1A9A8E] rounded-2xl p-8 text-white text-center">
