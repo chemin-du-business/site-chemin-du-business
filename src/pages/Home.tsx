@@ -167,7 +167,7 @@ const Home = () => {
               <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-[#F5A623]" />
               </div>
-              <div className="text-4xl font-bold mb-2">{indicateurs.satisfaction} / 5</div>
+              <div className="text-4xl font-bold mb-2">{indicateurs.satisfaction} / 10</div>
               <p className="text-blue-100">Taux de satisfaction</p>
             </div>
 
@@ -175,8 +175,8 @@ const Home = () => {
               <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">{indicateurs.reussite}%</div>
-              <p className="text-teal-100">Taux de réussite</p>
+              <div className="text-4xl font-bold mb-2">{indicateurs.depassementNiveau1}%</div>
+              <p className="text-teal-100">Taux de dépassement du Niveau 1</p>
             </div>
           </div>
 

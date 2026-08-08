@@ -47,9 +47,10 @@ export const prochainesSessions: Session[] = [
 
 // Indicateurs de résultats - Facilement modifiables
 export const indicateurs = {
-  satisfaction: 4.5,
-  reussite: 100,
-  derniereMiseAJour: '31/03/2026'
+  satisfaction: '9,1', // Taux de satisfaction (/10) - WordPress 9,1/10 (51 réponses), Python 9,3/10 (11 réponses)
+  depassementNiveau1: 24, // % d'apprenants qui dépassent le Niveau 1 Tosa (socle garanti)
+  recommandation: '98,5', // Taux de recommandation (%)
+  derniereMiseAJour: '08/08/2026'
 };
 
 // Informations de contact
