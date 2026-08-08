@@ -66,7 +66,7 @@ const FormationIAPython = () => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-4">
               <Award className="w-4 h-4 text-[#F5A623]" />
-              <span>Certification Tosa – RS6962</span>
+              <span>Évaluation Tosa – RS6962 Niveau 1</span>
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
               Intelligence Artificielle & Python – Initiation
