@@ -394,7 +394,6 @@ const FormationWordPress = () => {
                   <h3 className="text-base font-semibold text-[#0B3D5C] mb-2">Délais d'accès</h3>
                   <ul className="text-sm text-gray-600 space-y-2">
                     <li>• Inscription jusqu'à 15 jours avant la formation</li>
-                    <li>• CPF : délai légal minimum de 11 jours</li>
                   </ul>
                 </div>
               </div>

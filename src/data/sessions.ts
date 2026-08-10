@@ -20,14 +20,6 @@ export const prochainesSessions: Session[] = [
     places: 15
   },
   {
-    id: 'wp-003',
-    formation: 'WordPress (Tosa)',
-    date: '15/08/2026',
-    modalite: 'Hybride',
-    statut: 'disponible',
-    places: 15
-  },
-  {
     id: 'ia-001',
     formation: 'Python (Tosa)',
     date: '15/08/2026',
@@ -36,9 +28,49 @@ export const prochainesSessions: Session[] = [
     places: 15
   },
   {
-    id: 'ia-003',
+    id: 'wp-004',
+    formation: 'WordPress (Tosa)',
+    date: '19/09/2026',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
+  },
+  {
+    id: 'ia-004',
     formation: 'Python (Tosa)',
-    date: '15/08/2026',
+    date: '19/09/2026',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
+  },
+  {
+    id: 'wp-005',
+    formation: 'WordPress (Tosa)',
+    date: '24/10/2026',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
+  },
+  {
+    id: 'ia-005',
+    formation: 'Python (Tosa)',
+    date: '24/10/2026',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
+  },
+  {
+    id: 'wp-006',
+    formation: 'WordPress (Tosa)',
+    date: '28/11/2026',
+    modalite: 'Distanciel',
+    statut: 'disponible',
+    places: 15
+  },
+  {
+    id: 'ia-006',
+    formation: 'Python (Tosa)',
+    date: '28/11/2026',
     modalite: 'Distanciel',
     statut: 'disponible',
     places: 15
