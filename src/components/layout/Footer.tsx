@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <ScrollToTopLink to="/formation-ia-python" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  IA & Python (Tosa)
+                  Python (Tosa)
                 </ScrollToTopLink>
               </li>
             </ul>

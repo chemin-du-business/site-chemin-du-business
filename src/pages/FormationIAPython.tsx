@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code, Shield } from 'lucide-react';
+import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code, Shield, Hourglass, User, Compass, LineChart, ClipboardCheck } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
 import { prochainesSessions, indicateurs, contactInfo } from '@/data/sessions';
 import { calendlyLink } from '@/data/config';
 
 const FormationIAPython = () => {
-  const iaSessions = prochainesSessions.filter(s => s.formation.includes('IA'));
+  const iaSessions = prochainesSessions.filter(s => s.formation.includes('Python'));
 
   useEffect(() => {
     const existingLink = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
@@ -35,20 +35,52 @@ const FormationIAPython = () => {
   };
 
   const objectifs = [
-    'Comprendre ce qu\'est l\'intelligence artificielle',
-    'Identifier les différents types d\'IA',
-    'Comprendre les bases de Python',
-    'Écrire des scripts simples',
-    'Comprendre la logique d\'un agent IA',
-    'Automatiser des tâches simples'
+    'Identifier les principaux usages de l\'intelligence artificielle',
+    'Distinguer différents usages et outils d\'IA',
+    'Identifier un environnement d\'exécution Python',
+    'Créer et exécuter un script Python simple',
+    'Déclarer et manipuler des variables',
+    'Utiliser des types de données simples',
+    'Réaliser des opérations simples',
+    'Utiliser une condition dans un programme',
+    'Utiliser une boucle simple',
+    'Créer et manipuler une liste de données',
+    'Traiter des informations simples avec Python',
+    'Créer un script permettant d\'automatiser une tâche élémentaire',
+    'Identifier une erreur simple dans un script',
+    'Corriger une instruction simple avec accompagnement',
+    'Vérifier le résultat produit par un programme',
+    'Identifier les principes généraux de fonctionnement d\'un agent IA'
   ];
 
   const programme = [
-    { titre: 'Introduction à l\'intelligence artificielle', description: 'Définitions, histoire et applications actuelles de l\'IA' },
-    { titre: 'Bases de Python', description: 'Variables, conditions, boucles et structures de données' },
-    { titre: 'Analyse simple de données', description: 'Manipulation de données avec Python' },
-    { titre: 'Compréhension des agents IA', description: 'Fonctionnement et utilisation des agents intelligents' },
-    { titre: 'Automatisation de tâches', description: 'Création de workflows et scripts d\'automatisation simples' }
+    { titre: 'Introduction à l\'intelligence artificielle', description: 'Identifier les principes et les principaux usages de l\'intelligence artificielle', duree: '20 min' },
+    { titre: 'Découvrir les bases de Python', description: 'Créer et exécuter un premier programme Python utilisant des instructions simples', duree: '40 min' },
+    { titre: 'Conditions, boucles et données', description: 'Utiliser des structures élémentaires de programmation pour traiter des informations avec Python', duree: '40 min' },
+    { titre: 'Manipulation simple de données', description: 'Manipuler et traiter un ensemble simple de données avec Python', duree: '25 min' },
+    { titre: 'Automatiser une tâche simple avec Python', description: 'Créer un script Python permettant d\'automatiser une tâche élémentaire', duree: '35 min' },
+    { titre: 'Découverte des agents IA', description: 'Identifier le fonctionnement général et les principaux usages d\'un agent IA', duree: '20 min' }
+  ];
+
+  const methodesPedagogiques = [
+    'Démonstrations en direct',
+    'Exercices pratiques Python',
+    'Manipulations individuelles',
+    'Cas concrets',
+    'Mises en situation',
+    'Démonstrations d\'outils IA',
+    'Partage d\'écran',
+    'Accompagnement individualisé',
+    'Corrections en direct',
+    'Feedback du formateur',
+    'Questions / réponses'
+  ];
+
+  const etapesEvaluation = [
+    { icone: Compass, titre: 'Positionnement initial', description: 'Identifier le niveau de départ avant le démarrage des apprentissages' },
+    { icone: LineChart, titre: 'Évaluation continue', description: 'Observer les compétences pendant les exercices tout au long du parcours' },
+    { icone: ClipboardCheck, titre: 'Évaluation finale pratique', description: 'Partager son écran, présenter son code et exécuter son programme en fin de formation' },
+    { icone: Award, titre: 'Évaluation Tosa Python – Niveau 1', description: 'Réalisable dans les 12 mois suivant l\'entrée en formation' }
   ];
 
   const debouches = [
@@ -69,10 +101,10 @@ const FormationIAPython = () => {
               <span>Évaluation Tosa – RS6962 Niveau 1</span>
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
-              Intelligence Artificielle & Python – Initiation
+              Programmer et automatiser des tâches avec Python
             </h1>
             <p className="text-lg text-blue-100 leading-relaxed mb-6">
-              Cette formation permet de comprendre les bases de l'intelligence artificielle et d'automatiser des tâches simples avec Python, dans une logique d'initiation pratique et professionnelle.
+              Découvrez les fondamentaux de la programmation avec Python et initiez-vous à l'automatisation de tâches simples. Le parcours propose également une introduction aux usages de l'intelligence artificielle et au fonctionnement des agents IA.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact?type=devis" className="btn-primary flex items-center justify-center gap-2">
@@ -95,19 +127,26 @@ const FormationIAPython = () => {
       <section className="py-8 bg-white border-b">
         <div className="section-container">
           <div className="bg-gray-50 rounded-xl p-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Durée</span>
-                  <p className="font-medium text-[#0B3D5C]">5 heures (1 jour)</p>
+                  <p className="font-medium text-[#0B3D5C]">4 heures</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Hourglass className="w-5 h-5 text-[#F5A623]" />
+                <div>
+                  <span className="text-sm text-gray-500">Horaires</span>
+                  <p className="font-medium text-[#0B3D5C]">14h00 – 18h00</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Monitor className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Format</span>
-                  <p className="font-medium text-[#0B3D5C]">Distanciel / Hybride</p>
+                  <p className="font-medium text-[#0B3D5C]">Distanciel</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -121,7 +160,7 @@ const FormationIAPython = () => {
                 <Wallet className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Prix</span>
-                  <p className="font-medium text-[#0B3D5C]">Sur devis</p>
+                  <p className="font-medium text-[#0B3D5C]">1 600 € TTC</p>
                 </div>
               </div>
             </div>
@@ -167,7 +206,7 @@ const FormationIAPython = () => {
                 </div>
                 <div className="info-box">
                   <p className="text-gray-700">
-                    Débutants, entrepreneurs, freelances, salariés, demandeurs d'emploi
+                    Débutants sans expérience en programmation, entrepreneurs, porteurs de projet, freelances, salariés, personnes en reconversion professionnelle, étudiants et demandeurs d'emploi — et plus largement à toute personne souhaitant découvrir Python, l'automatisation et les usages professionnels de l'intelligence artificielle.
                   </p>
                 </div>
               </div>
@@ -183,19 +222,19 @@ const FormationIAPython = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Utilisation basique d'un ordinateur</span>
+                    <span className="text-gray-700">Aucune connaissance préalable en programmation n'est nécessaire</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Navigation internet</span>
+                    <span className="text-gray-700">Utiliser les fonctions courantes d'un ordinateur</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Aucun niveau en programmation requis</span>
+                    <span className="text-gray-700">Naviguer sur Internet</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Disposer d'un ordinateur et d'une connexion internet</span>
+                    <span className="text-gray-700">Disposer d'un ordinateur et d'une connexion Internet stable</span>
                   </li>
                 </ul>
               </div>
@@ -214,8 +253,11 @@ const FormationIAPython = () => {
                       <div className="w-8 h-8 rounded-full bg-[#2EC4B6] text-white flex items-center justify-center flex-shrink-0 text-sm font-medium">
                         {index + 1}
                       </div>
-                      <div>
-                        <h3 className="font-medium text-[#0B3D5C] mb-1">{item.titre}</h3>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between gap-2 mb-1">
+                          <h3 className="font-medium text-[#0B3D5C]">{item.titre}</h3>
+                          <span className="text-xs text-gray-500 whitespace-nowrap">{item.duree}</span>
+                        </div>
                         <p className="text-sm text-gray-600">{item.description}</p>
                       </div>
                     </div>
@@ -232,21 +274,18 @@ const FormationIAPython = () => {
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Méthodes pédagogiques</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="p-4 bg-teal-50 rounded-lg">
-                    <p className="text-gray-700">Apports théoriques</p>
-                  </div>
-                  <div className="p-4 bg-teal-50 rounded-lg">
-                    <p className="text-gray-700">Exercices pratiques en Python</p>
-                  </div>
-                  <div className="p-4 bg-teal-50 rounded-lg">
-                    <p className="text-gray-700">Démonstrations d'outils IA</p>
-                  </div>
-                  <div className="p-4 bg-teal-50 rounded-lg">
-                    <p className="text-gray-700">Cas concrets</p>
-                  </div>
-                  <div className="p-4 bg-teal-50 rounded-lg md:col-span-2">
-                    <p className="text-gray-700">Mise en situation</p>
-                  </div>
+                  {methodesPedagogiques.map((methode, index) => (
+                    <div
+                      key={index}
+                      className={`p-4 bg-teal-50 rounded-lg ${
+                        index === methodesPedagogiques.length - 1 && methodesPedagogiques.length % 2 !== 0
+                          ? 'md:col-span-2'
+                          : ''
+                      }`}
+                    >
+                      <p className="text-gray-700">{methode}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -259,10 +298,11 @@ const FormationIAPython = () => {
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Moyens techniques</h2>
                 </div>
                 <div className="flex flex-wrap gap-3">
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Classe virtuelle en direct</span>
                   <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Microsoft Teams</span>
-                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Python en ligne</span>
-                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Outils IA</span>
-                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Plateforme e-learning</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Environnement Python en ligne</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Outils d'intelligence artificielle</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Supports pédagogiques numériques</span>
                 </div>
               </div>
 
@@ -274,16 +314,25 @@ const FormationIAPython = () => {
                   </div>
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Évaluation</h2>
                 </div>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Exercices pratiques</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Évaluation Tosa Python (Niveau 1 validé)</span>
-                  </li>
-                </ul>
+                <p className="text-gray-600 mb-6 text-sm">
+                  Le parcours comporte quatre temps d'évaluation complémentaires, du positionnement initial à l'évaluation TOSA Python – Niveau 1.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {etapesEvaluation.map((etape, index) => {
+                    const Icone = etape.icone;
+                    return (
+                      <div key={index} className="flex gap-3 p-4 bg-gray-50 rounded-lg">
+                        <div className="w-9 h-9 rounded-lg bg-[#2EC4B6]/10 flex items-center justify-center flex-shrink-0">
+                          <Icone className="w-4 h-4 text-[#2EC4B6]" />
+                        </div>
+                        <div>
+                          <h3 className="font-medium text-[#0B3D5C] text-sm mb-1">{etape.titre}</h3>
+                          <p className="text-xs text-gray-600">{etape.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Débouchés */}
@@ -318,10 +367,30 @@ const FormationIAPython = () => {
                   <p className="text-teal-100 text-sm mb-4">
                     Test Tosa RS6962 – Programmer et automatiser des tâches avec Python – Niveau 1 validé
                   </p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-2">
                     <CheckCircle className="w-4 h-4 text-white" />
                     <span>RS6962 enregistré à France Compétences</span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Hourglass className="w-4 h-4 text-white" />
+                    <span>Réalisable dans les 12 mois suivant l'entrée en formation</span>
+                  </div>
+                </div>
+
+                {/* Formateur Card */}
+                <div className="bg-white rounded-xl p-6 shadow-lg border">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#F5A623]/10 flex items-center justify-center flex-shrink-0">
+                      <User className="w-6 h-6 text-[#F5A623]" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold text-[#0B3D5C]">Gracia Kumbu Voka</h3>
+                      <p className="text-xs text-gray-500">Entrepreneur et formateur</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Spécialisé dans le digital, l'entrepreneuriat, le e-commerce, l'intelligence artificielle et Python, il accompagne les apprenants dans le développement de compétences numériques concrètes.
+                  </p>
                 </div>
 
                 {/* Indicateurs Card */}

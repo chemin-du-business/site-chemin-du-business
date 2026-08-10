@@ -29,15 +29,15 @@ export const prochainesSessions: Session[] = [
   },
   {
     id: 'ia-001',
-    formation: 'IA & Python (Tosa)',
+    formation: 'Python (Tosa)',
     date: '15/08/2026',
-    modalite: 'Hybride',
+    modalite: 'Distanciel',
     statut: 'disponible',
     places: 15
   },
   {
     id: 'ia-003',
-    formation: 'IA & Python (Tosa)',
+    formation: 'Python (Tosa)',
     date: '15/08/2026',
     modalite: 'Distanciel',
     statut: 'disponible',

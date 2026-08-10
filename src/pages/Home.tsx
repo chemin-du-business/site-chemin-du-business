@@ -127,15 +127,15 @@ const Home = () => {
                 <Cpu className="w-7 h-7 text-[#2EC4B6]" />
               </div>
               <h3 className="text-xl font-semibold text-[#0B3D5C] mb-2">
-                Intelligence Artificielle & Python – Initiation
+                Programmer et automatiser des tâches avec Python
               </h3>
               <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
-                Comprenez l'IA et automatisez des tâches simples avec Python. Évaluation RS6962 – Niveau 1.
+                Créez vos premiers scripts Python et automatisez des tâches simples. Évaluation RS6962 – Niveau 1.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
-                <span>5 heures (1 jour)</span>
+                <span>4 heures</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link to="/formation-ia-python" onClick={scrollToTop} className="btn-secondary text-sm text-center py-2">

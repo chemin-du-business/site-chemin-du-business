@@ -84,7 +84,7 @@ const ContactForm = ({ defaultType = 'informations', showTitle = true }: Contact
   const formationOptions = [
     { value: '', label: 'Sélectionnez une formation' },
     { value: 'wordpress', label: 'WordPress (Tosa)' },
-    { value: 'ia-python', label: 'IA & Python (Tosa)' },
+    { value: 'ia-python', label: 'Python (Tosa)' },
     { value: 'autre', label: 'Autre / Je ne sais pas encore' }
   ];
 

@@ -51,14 +51,14 @@ const Formations = () => {
     },
     {
       id: 'ia-python',
-      titre: 'Intelligence Artificielle & Python – Initiation',
+      titre: 'Programmer et automatiser des tâches avec Python',
       certification: 'Tosa',
       rs: 'RS6962',
       niveau: 'Niveau 1',
-      duree: '5 heures',
+      duree: '4 heures',
       dureeText: '1 jour',
-      objectif: 'Comprendre l\'IA et automatiser des tâches simples',
-      public: 'Débutants, entrepreneurs, freelances, salariés',
+      objectif: 'Découvrir Python et automatiser des tâches simples',
+      public: 'Débutants, entrepreneurs, freelances, salariés, demandeurs d\'emploi',
       icone: '🤖',
       couleur: 'teal'
     }
