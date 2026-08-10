@@ -145,19 +145,12 @@ const Formations = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t">
-                  <Link 
+                  <Link
                     to={`/formation-${formation.id}`}
                     onClick={scrollToTop}
                     className="btn-secondary text-sm text-center py-2 flex-1"
                   >
                     Voir la formation
-                  </Link>
-                  <Link 
-                    to="/contact?type=devis"
-                    onClick={scrollToTop}
-                    className="btn-outline-orange text-sm text-center py-2 flex-1"
-                  >
-                    Demander un devis
                   </Link>
                 </div>
               </div>

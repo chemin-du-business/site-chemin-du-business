@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code, Shield, Hourglass, User, Compass, LineChart, ClipboardCheck } from 'lucide-react';
+import { Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Cpu, Code, Shield, Hourglass, User, Compass, LineChart, ClipboardCheck } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
 import { prochainesSessions, indicateurs, contactInfo } from '@/data/sessions';
 import { calendlyLink } from '@/data/config';
@@ -107,14 +107,10 @@ const FormationIAPython = () => {
               Découvrez les fondamentaux de la programmation avec Python et initiez-vous à l'automatisation de tâches simples. Le parcours propose également une introduction aux usages de l'intelligence artificielle et au fonctionnement des agents IA.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact?type=devis" className="btn-primary flex items-center justify-center gap-2">
-                Demander un devis
-                <ArrowRight className="w-4 h-4" />
-              </Link>
               <button
                 type="button"
                 onClick={openCalendly}
-                className="btn-outline-orange flex items-center justify-center gap-2"
+                className="btn-primary flex items-center justify-center gap-2"
               >
                 Prendre rendez-vous
               </button>
@@ -483,14 +479,10 @@ const FormationIAPython = () => {
               Notre équipe est à votre disposition pour vous accompagner dans votre projet de formation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact?type=devis" className="btn-primary flex items-center justify-center gap-2">
-                Demander un devis
-                <ArrowRight className="w-4 h-4" />
-              </Link>
               <button
                 type="button"
                 onClick={openCalendly}
-                className="btn-secondary flex items-center justify-center gap-2"
+                className="btn-primary flex items-center justify-center gap-2"
               >
                 Prendre rendez-vous
               </button>

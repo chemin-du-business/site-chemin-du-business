@@ -115,9 +115,6 @@ const Home = () => {
                 <Link to="/formation-wordpress" onClick={scrollToTop} className="btn-secondary text-sm text-center py-2">
                   Voir la formation
                 </Link>
-                <Link to="/contact?type=devis" onClick={scrollToTop} className="btn-outline-orange text-sm text-center py-2">
-                  Demander un devis
-                </Link>
               </div>
             </div>
 
@@ -140,9 +137,6 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link to="/formation-ia-python" onClick={scrollToTop} className="btn-secondary text-sm text-center py-2">
                   Voir la formation
-                </Link>
-                <Link to="/contact?type=devis" onClick={scrollToTop} className="btn-outline-orange text-sm text-center py-2">
-                  Demander un devis
                 </Link>
               </div>
             </div>

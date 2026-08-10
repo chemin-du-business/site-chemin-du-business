@@ -86,15 +86,6 @@ const Footer = () => {
                 </ScrollToTopLink>
               </li>
             </ul>
-            <div className="mt-4 pt-4 border-t border-gray-700">
-              <ScrollToTopLink
-                to="/contact"
-                className="inline-flex items-center gap-2 text-[#F5A623] hover:text-white transition-colors text-sm"
-              >
-                <CheckCircle className="w-4 h-4" />
-                Demander un devis
-              </ScrollToTopLink>
-            </div>
           </div>
 
           {/* Contact */}
