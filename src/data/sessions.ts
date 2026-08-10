@@ -16,16 +16,14 @@ export const prochainesSessions: Session[] = [
     formation: 'WordPress (Tosa)',
     date: '15/08/2026',
     modalite: 'Distanciel',
-    statut: 'disponible',
-    places: 15
+    statut: 'complet'
   },
   {
     id: 'ia-001',
     formation: 'Python (Tosa)',
     date: '15/08/2026',
     modalite: 'Distanciel',
-    statut: 'disponible',
-    places: 15
+    statut: 'complet'
   },
   {
     id: 'wp-004',
