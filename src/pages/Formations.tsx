@@ -38,14 +38,14 @@ const Formations = () => {
   const formations = [
     {
       id: 'wordpress',
-      titre: 'Créer et gérer un site web avec WordPress',
+      titre: 'Créer et gérer des sites web avec WordPress',
       certification: 'Tosa',
       rs: 'RS6965',
       niveau: 'Niveau 1',
-      duree: '5 heures',
+      duree: '4 heures',
       dureeText: '1 jour',
       objectif: 'Créer un site web professionnel et le gérer en autonomie',
-      public: 'Débutants, entrepreneurs, freelances, salariés en reconversion',
+      public: 'Débutants, entrepreneurs, freelances, salariés en reconversion, demandeurs d\'emploi',
       icone: '🌐',
       couleur: 'blue'
     },

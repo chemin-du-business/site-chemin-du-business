@@ -101,7 +101,7 @@ const Home = () => {
                 <Globe className="w-7 h-7 text-[#0B3D5C]" />
               </div>
               <h3 className="text-xl font-semibold text-[#0B3D5C] mb-2">
-                Créer et gérer un site web avec WordPress
+                Créer et gérer des sites web avec WordPress
               </h3>
               <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
@@ -109,7 +109,7 @@ const Home = () => {
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
-                <span>5 heures (1 jour)</span>
+                <span>4 heures</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link to="/formation-wordpress" onClick={scrollToTop} className="btn-secondary text-sm text-center py-2">

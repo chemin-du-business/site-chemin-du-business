@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Shield } from 'lucide-react';
+import { Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Shield, User, Compass, LineChart, ClipboardCheck } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
 import { prochainesSessions, indicateurs, contactInfo } from '@/data/sessions';
 import { calendlyLink } from '@/data/config';
@@ -35,24 +35,48 @@ const FormationWordPress = () => {
   };
 
   const objectifs = [
-    'Comprendre le fonctionnement de WordPress',
-    'Installer et configurer un site web',
-    'Créer des pages et des articles',
-    'Gérer les médias et les menus',
-    'Installer et personnaliser des thèmes et extensions',
-    'Créer une boutique en ligne avec WooCommerce',
-    'Comprendre les différences entre WordPress et Shopify',
-    'Mettre en ligne et administrer un site web'
+    'Identifier les menus et fonctions principales de WordPress',
+    'Se repérer dans l\'interface d\'administration',
+    'Créer et modifier une page et un article',
+    'Appliquer des mises en forme simples à un contenu',
+    'Importer et intégrer des médias',
+    'Créer et organiser un menu de navigation',
+    'Reconnaître et consulter les thèmes disponibles',
+    'Identifier, activer et gérer une extension',
+    'Identifier le menu et le rôle des widgets',
+    'Structurer et personnaliser une page selon des principes simples de webdesign',
+    'Créer et paramétrer un produit simple avec WooCommerce',
+    'Identifier les principales étapes de mise en ligne d\'un site'
   ];
 
   const programme = [
-    { titre: 'Introduction à WordPress', description: 'Présentation de WordPress, son écosystème et ses cas d\'usage' },
-    { titre: 'Création de pages et contenus', description: 'Gestion des pages, articles, catégories et tags' },
-    { titre: 'Gestion des médias et menus', description: 'Importation d\'images, création de galeries et organisation des menus' },
-    { titre: 'Installation de thèmes et plugins', description: 'Personnalisation visuelle et ajout de fonctionnalités' },
-    { titre: 'Initiation à WooCommerce', description: 'Création d\'une boutique en ligne simple' },
-    { titre: 'Ouverture e-commerce', description: 'Comparaison WordPress / Shopify pour les projets e-commerce' },
-    { titre: 'Mise en ligne du site', description: 'Hébergement, nom de domaine et mise en production' }
+    { titre: 'Introduction et prise en main de WordPress', description: 'Identifier l\'environnement WordPress et ses principales fonctions élémentaires', duree: '15 min' },
+    { titre: 'Création de pages et de contenus', description: 'Créer, modifier et organiser les principaux contenus d\'un site WordPress', duree: '25 min' },
+    { titre: 'Gestion des médias et des menus', description: 'Importer des médias et organiser la navigation principale d\'un site WordPress', duree: '15 min' },
+    { titre: 'Design et mise en page', description: 'Structurer et personnaliser une page WordPress en appliquant des règles simples de webdesign', duree: '40 min' },
+    { titre: 'Thèmes, extensions et widgets', description: 'Identifier et utiliser les fonctionnalités élémentaires liées aux thèmes, extensions et widgets', duree: '15 min' },
+    { titre: 'Initiation à WooCommerce', description: 'Créer et paramétrer un produit simple avec WooCommerce', duree: '25 min' },
+    { titre: 'Ouverture e-commerce : WordPress/WooCommerce et Shopify', description: 'Identifier les principales différences entre WordPress/WooCommerce et Shopify', duree: '35 min' },
+    { titre: 'Hébergement et mise en ligne', description: 'Identifier les principaux éléments nécessaires à la publication d\'un site WordPress', duree: '15 min' }
+  ];
+
+  const methodesPedagogiques = [
+    'Démonstrations en direct',
+    'Manipulations individuelles',
+    'Exercices pratiques guidés',
+    'Création progressive d\'un site',
+    'Mises en situation',
+    'Partage d\'écran',
+    'Accompagnement individualisé',
+    'Corrections et feedback du formateur',
+    'Questions / réponses'
+  ];
+
+  const etapesEvaluation = [
+    { icone: Compass, titre: 'Positionnement initial', description: 'Identifier le niveau de départ avant le démarrage des apprentissages' },
+    { icone: LineChart, titre: 'Évaluation continue', description: 'Observer la progression des compétences tout au long du parcours' },
+    { icone: ClipboardCheck, titre: 'Évaluation finale pratique', description: 'Vérifier les acquis en situation pratique en fin de formation' },
+    { icone: Award, titre: 'Évaluation Tosa WordPress – Niveau 1', description: 'Réalisable dans les 12 mois suivant l\'entrée en formation' }
   ];
 
   const debouches = [
@@ -73,10 +97,10 @@ const FormationWordPress = () => {
               <span>Évaluation Tosa – RS6965 Niveau 1</span>
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
-              Créer et gérer un site web avec WordPress
+              Créer et gérer des sites web avec WordPress
             </h1>
             <p className="text-lg text-blue-100 leading-relaxed mb-6">
-              Cette formation permet de créer un site web professionnel avec WordPress et de comprendre les premières logiques du e-commerce, notamment avec WooCommerce, avec une ouverture sur Shopify pour comparer les solutions.
+              Découvrez WordPress et acquérez les compétences fondamentales pour créer, personnaliser et gérer un premier site internet. Le parcours aborde aussi les bases de WooCommerce, une ouverture aux solutions e-commerce et les principales étapes de mise en ligne d'un site.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
@@ -100,7 +124,7 @@ const FormationWordPress = () => {
                 <Clock className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Durée</span>
-                  <p className="font-medium text-[#0B3D5C]">5 heures (1 jour)</p>
+                  <p className="font-medium text-[#0B3D5C]">4 heures</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -121,7 +145,7 @@ const FormationWordPress = () => {
                 <Wallet className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Prix</span>
-                  <p className="font-medium text-[#0B3D5C]">Sur devis</p>
+                  <p className="font-medium text-[#0B3D5C]">1 600 € TTC</p>
                 </div>
               </div>
             </div>
@@ -167,7 +191,7 @@ const FormationWordPress = () => {
                 </div>
                 <div className="info-box">
                   <p className="text-gray-700">
-                    Débutants, entrepreneurs, freelances, salariés en reconversion, demandeurs d'emploi
+                    Débutants ayant peu ou jamais utilisé WordPress, entrepreneurs, porteurs de projet, freelances débutants, salariés et personnes en reconversion professionnelle, étudiants et demandeurs d'emploi — et plus largement à toute personne souhaitant apprendre à créer et gérer un premier site WordPress.
                   </p>
                 </div>
               </div>
@@ -183,15 +207,19 @@ const FormationWordPress = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Savoir utiliser un ordinateur</span>
+                    <span className="text-gray-700">Aucune connaissance préalable de WordPress n'est nécessaire</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Naviguer sur internet</span>
+                    <span className="text-gray-700">Savoir utiliser les fonctions courantes d'un ordinateur</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Disposer d'un ordinateur et d'une connexion internet</span>
+                    <span className="text-gray-700">Savoir naviguer sur Internet</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
+                    <span className="text-gray-700">Disposer d'un ordinateur et d'une connexion Internet stable</span>
                   </li>
                 </ul>
               </div>
@@ -210,8 +238,11 @@ const FormationWordPress = () => {
                       <div className="w-8 h-8 rounded-full bg-[#0B3D5C] text-white flex items-center justify-center flex-shrink-0 text-sm font-medium">
                         {index + 1}
                       </div>
-                      <div>
-                        <h3 className="font-medium text-[#0B3D5C] mb-1">{item.titre}</h3>
+                      <div className="flex-grow">
+                        <div className="flex items-center justify-between gap-2 mb-1">
+                          <h3 className="font-medium text-[#0B3D5C]">{item.titre}</h3>
+                          <span className="text-xs text-gray-500 whitespace-nowrap">{item.duree}</span>
+                        </div>
                         <p className="text-sm text-gray-600">{item.description}</p>
                       </div>
                     </div>
@@ -228,21 +259,18 @@ const FormationWordPress = () => {
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Méthodes pédagogiques</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <p className="text-gray-700">Apports théoriques courts</p>
-                  </div>
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <p className="text-gray-700">Exercices pratiques sur WordPress</p>
-                  </div>
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <p className="text-gray-700">Démonstrations en direct</p>
-                  </div>
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <p className="text-gray-700">Mise en situation</p>
-                  </div>
-                  <div className="p-4 bg-blue-50 rounded-lg md:col-span-2">
-                    <p className="text-gray-700">Feedback individualisé</p>
-                  </div>
+                  {methodesPedagogiques.map((methode, index) => (
+                    <div
+                      key={index}
+                      className={`p-4 bg-blue-50 rounded-lg ${
+                        index === methodesPedagogiques.length - 1 && methodesPedagogiques.length % 2 !== 0
+                          ? 'md:col-span-2'
+                          : ''
+                      }`}
+                    >
+                      <p className="text-gray-700">{methode}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -255,9 +283,11 @@ const FormationWordPress = () => {
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Moyens techniques</h2>
                 </div>
                 <div className="flex flex-wrap gap-3">
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Environnement WordPress</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Environnement WooCommerce</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Environnement Shopify (démonstrations)</span>
                   <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Microsoft Teams</span>
-                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Google Drive</span>
-                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">WordPress en ligne ou hébergé</span>
+                  <span className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Supports pédagogiques numériques</span>
                 </div>
               </div>
 
@@ -269,20 +299,25 @@ const FormationWordPress = () => {
                   </div>
                   <h2 className="text-2xl font-bold text-[#0B3D5C]">Évaluation</h2>
                 </div>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Exercices pratiques</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Quiz</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
-                    <span className="text-gray-700">Évaluation Tosa WordPress (Niveau 1 validé)</span>
-                  </li>
-                </ul>
+                <p className="text-gray-600 mb-6 text-sm">
+                  Le parcours comporte quatre temps d'évaluation complémentaires, du positionnement initial à l'évaluation TOSA WordPress – Niveau 1.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {etapesEvaluation.map((etape, index) => {
+                    const Icone = etape.icone;
+                    return (
+                      <div key={index} className="flex gap-3 p-4 bg-gray-50 rounded-lg">
+                        <div className="w-9 h-9 rounded-lg bg-[#0B3D5C]/10 flex items-center justify-center flex-shrink-0">
+                          <Icone className="w-4 h-4 text-[#0B3D5C]" />
+                        </div>
+                        <div>
+                          <h3 className="font-medium text-[#0B3D5C] text-sm mb-1">{etape.titre}</h3>
+                          <p className="text-xs text-gray-600">{etape.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Débouchés */}
@@ -314,10 +349,30 @@ const FormationWordPress = () => {
                   <p className="text-blue-100 text-sm mb-4">
                     Test Tosa RS6965 – Créer et gérer des sites web avec WordPress – Niveau 1 validé
                   </p>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm mb-2">
                     <CheckCircle className="w-4 h-4 text-[#2EC4B6]" />
                     <span>RS6965 enregistré à France Compétences</span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Timer className="w-4 h-4 text-[#2EC4B6]" />
+                    <span>Réalisable dans les 12 mois suivant l'entrée en formation</span>
+                  </div>
+                </div>
+
+                {/* Formateur Card */}
+                <div className="bg-white rounded-xl p-6 shadow-lg border">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-[#F5A623]/10 flex items-center justify-center flex-shrink-0">
+                      <User className="w-6 h-6 text-[#F5A623]" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold text-[#0B3D5C]">Gracia Kumbu Voka</h3>
+                      <p className="text-xs text-gray-500">Entrepreneur et formateur</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Spécialisé dans le digital, l'entrepreneuriat, le e-commerce et l'intelligence artificielle, il accompagne les apprenants dans le développement de compétences numériques concrètes, notamment sur WordPress.
+                  </p>
                 </div>
 
                 {/* Indicateurs Card */}
