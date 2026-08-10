@@ -458,7 +458,7 @@ const FormationIAPython = () => {
                   <Timer className="w-8 h-8 text-amber-600 mb-3" />
                   <h3 className="text-base font-semibold text-[#0B3D5C] mb-2">Accès à la formation</h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    L'inscription se fait directement auprès de notre organisme de formation. Avant l'entrée en formation, vous recevez toutes les informations et documents nécessaires à votre participation.
+                    L'inscription se fait directement auprès de notre organisme de formation, en prenant contact sur le site, par téléphone ou par email. Avant l'entrée en formation, vous recevez toutes les informations et documents nécessaires à votre participation.
                   </p>
                   <ul className="text-sm text-gray-600 space-y-2">
                     <li>• Inscription jusqu'à 15 jours avant la formation</li>
