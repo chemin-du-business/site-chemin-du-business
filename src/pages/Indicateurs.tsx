@@ -142,14 +142,18 @@ const Indicateurs = () => {
               Notre engagement qualité
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              CHEMIN DU BUSINESS s'engage à maintenir un haut niveau de qualité dans toutes nos formations. 
-              Nos indicateurs sont régulièrement mis à jour pour refléter fidèlement la satisfaction et 
+              CHEMIN DU BUSINESS s'engage à maintenir un haut niveau de qualité dans toutes nos formations.
+              Nos indicateurs sont régulièrement mis à jour pour refléter fidèlement la satisfaction et
               la réussite de nos apprenants.
             </p>
-            <div className="inline-flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full">
-              <CheckCircle className="w-5 h-5 text-green-600" />
-              <span className="text-green-700 font-medium">Certifié Qualiopi</span>
-            </div>
+            <img
+              src="/images/qualiopi-certification.jpg"
+              alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
+              className="w-full max-w-lg mx-auto rounded-lg mb-4"
+            />
+            <p className="text-gray-500 text-xs max-w-xl mx-auto">
+              Certification qualité délivrée par ICPF Certification Qualité au titre de la catégorie d'action « Actions de formation ».
+            </p>
           </div>
         </div>
       </section>

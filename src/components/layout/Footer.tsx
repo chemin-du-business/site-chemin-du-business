@@ -1,4 +1,4 @@
-import { Phone, Mail, CheckCircle } from 'lucide-react';
+import { Phone, Mail, Award, CheckCircle } from 'lucide-react';
 import { contactInfo } from '@/data/sessions';
 import { horairesSupport } from '@/data/config';
 import ScrollToTopLink from '@/components/ScrollToTopLink';
@@ -24,12 +24,9 @@ const Footer = () => {
               Organisme de formation spécialisé dans les compétences digitales. 
               Formations évaluées et professionnelles.
             </p>
-            <div className="bg-white inline-block rounded-md p-2 mb-3">
-              <img
-                src="/images/qualiopi-logo.png"
-                alt="Qualiopi - Processus certifié - République Française"
-                className="h-10 w-auto"
-              />
+            <div className="flex items-center gap-2 text-sm text-gray-300">
+              <Award className="w-5 h-5 text-[#F5A623]" />
+              <span>Certifié Qualiopi</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-300 mt-2">
               <CheckCircle className="w-5 h-5 text-[#2EC4B6]" />
