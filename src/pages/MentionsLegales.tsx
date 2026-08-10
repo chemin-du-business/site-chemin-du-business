@@ -100,11 +100,16 @@ const MentionsLegales = () => {
                   <Award className="w-6 h-6 text-green-600" />
                   <span className="font-semibold text-green-800">Certifié Qualiopi</span>
                 </div>
-                <p className="text-gray-700 text-sm">
-                  CHEMIN DU BUSINESS est un organisme de formation certifié Qualiopi, 
-                  garantissant le respect des critères qualité définis par la loi pour 
+                <p className="text-gray-700 text-sm mb-4">
+                  CHEMIN DU BUSINESS est un organisme de formation certifié Qualiopi,
+                  garantissant le respect des critères qualité définis par la loi pour
                   les actions de formation.
                 </p>
+                <img
+                  src="/images/qualiopi-certification.jpg"
+                  alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
+                  className="w-full max-w-md rounded-lg border border-green-100"
+                />
               </div>
             </div>
 

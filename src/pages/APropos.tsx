@@ -175,8 +175,29 @@ const APropos = () => {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* Certification qualité */}
       <section className="py-16 bg-gray-50">
+        <div className="section-container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#0B3D5C] mb-8 text-center">
+              Certification qualité
+            </h2>
+            <div className="bg-white rounded-xl p-8 shadow-md flex flex-col items-center text-center">
+              <img
+                src="/images/qualiopi-certification.jpg"
+                alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
+                className="w-full max-w-lg rounded-lg mb-6"
+              />
+              <p className="text-gray-600 text-sm max-w-xl">
+                CHEMIN DU BUSINESS — LE CONSULTANT IT (EURL) est certifié Qualiopi au titre de la catégorie d'action "Actions de formation". Cette certification qualité a été délivrée par ICPF Certification Qualité et atteste du respect des critères qualité définis par le Référentiel National Qualité.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-16 bg-white">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl lg:text-3xl font-bold text-[#0B3D5C] mb-8">
