@@ -12,20 +12,6 @@ export interface Session {
 
 export const prochainesSessions: Session[] = [
   {
-    id: 'wp-001',
-    formation: 'WordPress (Tosa)',
-    date: '15/08/2026',
-    modalite: 'Distanciel',
-    statut: 'complet'
-  },
-  {
-    id: 'ia-001',
-    formation: 'Python (Tosa)',
-    date: '15/08/2026',
-    modalite: 'Distanciel',
-    statut: 'complet'
-  },
-  {
     id: 'wp-004',
     formation: 'WordPress (Tosa)',
     date: '19/09/2026',
