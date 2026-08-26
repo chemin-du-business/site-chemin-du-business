@@ -94,7 +94,7 @@ const FormationWordPress = () => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-4">
               <Award className="w-4 h-4 text-[#F5A623]" />
-              <span>Évaluation Tosa – RS6965 Niveau 1</span>
+              <span>Évaluation Tosa WordPress – Niveau 1</span>
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
               Créer et gérer des sites web avec WordPress
@@ -138,7 +138,7 @@ const FormationWordPress = () => {
                 <Award className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Évaluation</span>
-                  <p className="font-medium text-[#0B3D5C]">RS6965 – Niveau 1</p>
+                  <p className="font-medium text-[#0B3D5C]">Tosa WordPress Niveau 1</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

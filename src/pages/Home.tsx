@@ -105,7 +105,7 @@ const Home = () => {
               </h3>
               <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
-                Créez un site web professionnel et gérez-le en autonomie. Évaluation RS6965 – Niveau 1.
+                Créez un site web professionnel et gérez-le en autonomie. Évaluation Tosa WordPress Niveau 1.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
@@ -128,7 +128,7 @@ const Home = () => {
               </h3>
               <span className="badge-certification mb-4 inline-block">Évaluation Tosa</span>
               <p className="text-gray-600 mb-4 text-sm">
-                Créez vos premiers scripts Python et automatisez des tâches simples. Évaluation RS6962 – Niveau 1.
+                Créez vos premiers scripts Python et automatisez des tâches simples. Évaluation Tosa Python Niveau 1.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <Calendar className="w-4 h-4" />
