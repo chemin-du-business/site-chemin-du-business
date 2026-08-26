@@ -119,7 +119,7 @@ const Indicateurs = () => {
                   <h3 className="text-lg font-semibold text-[#0B3D5C]">Taux de dépassement du Niveau 1</h3>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">
-                  Parmi les apprenants ayant validé le Niveau 1, 24,4% (WordPress) vont au-delà et atteignent un niveau supérieur (Basique, Opérationnel ou Avancé).
+                  Parmi les apprenants ayant validé le Niveau 1, 23,5% (WordPress) vont au-delà et atteignent un niveau supérieur (Basique, Opérationnel ou Avancé).
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <CheckCircle className="w-4 h-4" />

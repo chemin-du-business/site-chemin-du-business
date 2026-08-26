@@ -77,11 +77,11 @@ export const prochainesSessions: Session[] = [
 
 // Indicateurs de résultats - Facilement modifiables
 export const indicateurs = {
-  satisfaction: '9,1', // Taux de satisfaction (/10) - WordPress 9,1/10 (51 réponses), Python 9,3/10 (11 réponses)
+  satisfaction: '9,1', // Taux de satisfaction (/10) - WordPress 9,1/10, Python 9,3/10, Global 9,1/10 (inchangé, échantillon élargi : n=88)
   niveau1Garanti: 100, // % d'apprenants évalués qui valident au moins le Niveau 1 Tosa (socle garanti)
-  depassementNiveau1: 24, // % d'apprenants qui dépassent le Niveau 1 Tosa (socle garanti)
-  recommandation: '98,5', // Taux de recommandation (%)
-  derniereMiseAJour: '08/08/2026'
+  depassementNiveau1: '23,5', // % d'apprenants qui dépassent le Niveau 1 Tosa (WordPress) - socle garanti
+  recommandation: '97,7', // Taux de recommandation (%)
+  derniereMiseAJour: '18/08/2026'
 };
 
 // Informations de contact
