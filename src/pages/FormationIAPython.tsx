@@ -398,7 +398,7 @@ const FormationIAPython = () => {
                       <span className="text-gray-600 text-sm">Satisfaction</span>
                       <div className="flex items-center gap-1">
                         <Star className="w-4 h-4 text-[#F5A623] fill-[#F5A623]" />
-                        <span className="font-semibold text-[#0B3D5C]">{indicateurs.satisfaction} / 10</span>
+                        <span className="font-semibold text-[#0B3D5C]">{indicateurs.satisfactionPython} / 10</span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between">
@@ -410,7 +410,7 @@ const FormationIAPython = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-gray-600 text-sm">Dépassement Niveau 1</span>
-                      <span className="font-semibold text-[#0B3D5C]">{indicateurs.depassementNiveau1}%</span>
+                      <span className="font-semibold text-[#0B3D5C]">{indicateurs.depassementNiveau1Python}%</span>
                     </div>
                   </div>
                 </div>

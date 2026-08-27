@@ -63,9 +63,11 @@ export const prochainesSessions: Session[] = [
 
 // Indicateurs de résultats - Facilement modifiables
 export const indicateurs = {
-  satisfaction: '9,1', // Taux de satisfaction (/10) - WordPress 9,1/10, Python 9,3/10, Global 9,1/10 (inchangé, échantillon élargi : n=88)
+  satisfaction: '9,1', // Taux de satisfaction (/10) - WordPress 9,1/10 (utilisé aussi comme moyenne globale, échantillon n=88)
+  satisfactionPython: '9,3', // Taux de satisfaction spécifique à la formation Python (/10)
   niveau1Garanti: 100, // % d'apprenants évalués qui valident au moins le Niveau 1 Tosa (socle garanti)
-  depassementNiveau1: '23,5', // % d'apprenants qui dépassent le Niveau 1 Tosa (WordPress) - socle garanti
+  depassementNiveau1: '23,5', // % d'apprenants qui dépassent le Niveau 1 Tosa - WordPress uniquement
+  depassementNiveau1Python: 0, // % d'apprenants qui dépassent le Niveau 1 Tosa en Python - aucun dépassement constaté sur 13 résultats connus
   recommandation: '97,7', // Taux de recommandation (%)
   derniereMiseAJour: '18/08/2026'
 };
