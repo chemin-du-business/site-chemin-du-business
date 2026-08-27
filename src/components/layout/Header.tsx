@@ -64,9 +64,6 @@ const Header = () => {
               <span className="hidden sm:inline">contact@chemindubusiness.fr</span>
             </a>
           </div>
-          <div className="text-xs opacity-80">
-            Organisme de formation certifié Qualiopi
-          </div>
         </div>
       </div>
 
