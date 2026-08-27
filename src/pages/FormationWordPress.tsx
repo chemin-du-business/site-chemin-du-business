@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Shield, User, Compass, LineChart, ClipboardCheck } from 'lucide-react';
+import { Calendar, Award, Clock, Monitor, CheckCircle, Users, BookOpen, Target, Wrench, FileText, GraduationCap, Briefcase, Wallet, Timer, Accessibility, TrendingUp, Star, MessageSquare, Shield, User, Compass, LineChart, ClipboardCheck, Hourglass } from 'lucide-react';
 import SessionSidebar from '@/components/SessionSidebar';
 import { prochainesSessions, indicateurs, contactInfo } from '@/data/sessions';
 import { calendlyLink } from '@/data/config';
@@ -119,12 +119,19 @@ const FormationWordPress = () => {
       <section className="py-8 bg-white border-b">
         <div className="section-container">
           <div className="bg-gray-50 rounded-xl p-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-[#F5A623]" />
                 <div>
                   <span className="text-sm text-gray-500">Durée</span>
                   <p className="font-medium text-[#0B3D5C]">4 heures</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Hourglass className="w-5 h-5 text-[#F5A623]" />
+                <div>
+                  <span className="text-sm text-gray-500">Horaires</span>
+                  <p className="font-medium text-[#0B3D5C]">9h00 – 13h00</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
