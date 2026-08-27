@@ -33,7 +33,7 @@ const Accessibilite = () => {
 
   const partenaires = [
     { nom: 'AGEFIPH', description: 'Association de gestion du fonds pour l\'insertion professionnelle des personnes handicapées' },
-    { nom: 'CAP EMPLOI', description: 'Réseau spécialisé dans l\'accompagnement des personnes handicapées vers l\'emploi' }
+    { nom: 'FAGERH', description: 'Fédération des acteurs de la gestion et de l\'emploi des personnes en situation de handicap' }
   ];
 
   return (
