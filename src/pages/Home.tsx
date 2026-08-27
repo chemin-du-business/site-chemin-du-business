@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Accessibility, Wallet, Calendar, Star, TrendingUp, CheckCircle, Globe, Cpu, Shield } from 'lucide-react';
+import { ArrowRight, Accessibility, Wallet, Calendar, Star, TrendingUp, CheckCircle, Globe, Cpu, Shield } from 'lucide-react';
 import SessionCard from '@/components/SessionCard';
 import VideoSection from '@/components/VideoSection';
 import { prochainesSessions, indicateurs } from '@/data/sessions';
@@ -48,14 +48,6 @@ const Home = () => {
       <section className="bg-gradient-to-br from-[#0B3D5C] to-[#1A5A7A] text-white py-16 lg:py-24">
         <div className="section-container">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6">
-              <Award className="w-4 h-4 text-[#F5A623]" />
-              <span>Organisme de formation certifié Qualiopi</span>
-            </div>
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6 ml-2">
-              <Wallet className="w-4 h-4 text-[#2EC4B6]" />
-              <span>Formations éligibles au financement CPF </span>
-            </div>
             <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
               Formations digitales professionnelles et évaluées
             </h1>
