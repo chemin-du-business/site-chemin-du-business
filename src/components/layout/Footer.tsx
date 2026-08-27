@@ -1,4 +1,4 @@
-import { Phone, Mail, Award, CheckCircle } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { contactInfo } from '@/data/sessions';
 import { horairesSupport } from '@/data/config';
 import ScrollToTopLink from '@/components/ScrollToTopLink';
@@ -21,17 +21,9 @@ const Footer = () => {
               />
             </ScrollToTopLink>
             <p className="text-gray-300 text-sm mb-4">
-              Organisme de formation spécialisé dans les compétences digitales. 
+              Organisme de formation spécialisé dans les compétences digitales.
               Formations évaluées et professionnelles.
             </p>
-            <div className="flex items-center gap-2 text-sm text-gray-300">
-              <Award className="w-5 h-5 text-[#F5A623]" />
-              <span>Certifié Qualiopi</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-gray-300 mt-2">
-              <CheckCircle className="w-5 h-5 text-[#2EC4B6]" />
-              <span>Formations éligibles au CPF</span>
-            </div>
           </div>
 
           {/* Navigation */}
