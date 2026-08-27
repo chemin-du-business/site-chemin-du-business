@@ -31,7 +31,7 @@ const Indicateurs = () => {
               <div className="text-2xl text-blue-200 mb-4">/ 10</div>
               <h2 className="text-xl font-semibold mb-2">Taux de satisfaction</h2>
               <p className="text-blue-100 text-sm">
-                Basé sur les évaluations des apprenants à l'issue de nos formations
+                Basé sur les évaluations des apprenants à l'issue de nos formations (88 avis)
               </p>
             </div>
 
@@ -87,7 +87,7 @@ const Indicateurs = () => {
                   <h3 className="text-lg font-semibold text-[#0B3D5C]">Taux de satisfaction</h3>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">
-                  Calculé sur la base des questionnaires d'évaluation remplis par les apprenants à l'issue de chaque formation. WordPress : 9,1/10 (51 réponses). Python : 9,3/10 (11 réponses). Questionnaires anonymes.
+                  Calculé sur la base des questionnaires d'évaluation remplis par les apprenants à l'issue de chaque formation. WordPress : 9,1/10. Python : 9,3/10. Moyenne globale : 9,1/10, sur la base de 88 avis. Questionnaires anonymes.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <FileText className="w-4 h-4" />
