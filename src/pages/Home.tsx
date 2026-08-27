@@ -182,6 +182,14 @@ const Home = () => {
             </div>
           </div>
 
+          <div className="text-center mt-10">
+            <img
+              src="/images/qualiopi-certification.jpg"
+              alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
+              className="w-full max-w-lg mx-auto rounded-lg"
+            />
+          </div>
+
           <div className="text-center mt-8">
             <Link to="/indicateurs" onClick={scrollToTop} className="text-[#0B3D5C] hover:text-[#F5A623] transition-colors font-medium inline-flex items-center gap-2">
               Voir le détail des indicateurs
