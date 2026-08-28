@@ -108,8 +108,17 @@ const MentionsLegales = () => {
                 <img
                   src="/images/qualiopi-certification.jpg"
                   alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
-                  className="w-full max-w-md rounded-lg border border-green-100"
+                  className="w-full max-w-md rounded-lg border border-green-100 mb-4"
                 />
+                <a
+                  href="/documents/certificat-qualiopi-chemin-du-business.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-green-800 font-medium hover:underline"
+                >
+                  <FileText className="w-4 h-4" />
+                  Consulter le certificat Qualiopi (PDF)
+                </a>
               </div>
             </div>
 

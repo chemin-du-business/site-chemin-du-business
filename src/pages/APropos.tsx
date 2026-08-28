@@ -188,9 +188,18 @@ const APropos = () => {
                 alt="Certification Qualiopi - Processus certifié pour la catégorie Actions de formation - Délivrée par ICPF Certification Qualité"
                 className="w-full max-w-lg rounded-lg mb-6"
               />
-              <p className="text-gray-600 text-sm max-w-xl">
+              <p className="text-gray-600 text-sm max-w-xl mb-6">
                 CHEMIN DU BUSINESS — LE CONSULTANT IT (EURL) est certifié Qualiopi au titre de la catégorie d'action "Actions de formation". Cette certification qualité a été délivrée par ICPF Certification Qualité et atteste du respect des critères qualité définis par le Référentiel National Qualité.
               </p>
+              <a
+                href="/documents/certificat-qualiopi-chemin-du-business.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary inline-flex items-center gap-2 text-sm"
+              >
+                <FileText className="w-4 h-4" />
+                Consulter le certificat Qualiopi (PDF)
+              </a>
             </div>
           </div>
         </div>
