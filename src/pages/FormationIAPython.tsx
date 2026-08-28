@@ -491,6 +491,15 @@ const FormationIAPython = () => {
           </div>
         </div>
       </section>
+
+      {/* Enregistrement RS */}
+      <section className="py-6 bg-white border-t">
+        <div className="section-container">
+          <p className="text-xs text-gray-500 text-center max-w-2xl mx-auto">
+            RS6962 – Programmer et automatiser des tâches avec Python (Tosa). Date d'échéance de l'enregistrement : 18/12/2027.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
