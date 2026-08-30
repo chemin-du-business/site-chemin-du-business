@@ -489,7 +489,7 @@ const FormationWordPress = () => {
       <section className="py-6 bg-white border-t">
         <div className="section-container">
           <p className="text-xs text-gray-500 text-center max-w-2xl mx-auto">
-            RS6965 – Créer et gérer des sites web avec WordPress (Tosa). Date d'échéance de l'enregistrement : 18/12/2027 (à partir du Niveau 3).
+            RS6965 – Créer et gérer des sites web avec WordPress (Tosa). Date de décision : 18/12/2024. Date d'échéance de l'enregistrement : 18/12/2027 (à partir du Niveau 3).
           </p>
           <p className="text-xs text-gray-400 text-center max-w-2xl mx-auto mt-2">
             Ces informations sont mises à jour régulièrement. Dernière mise à jour : 28/08/2026.
