@@ -498,6 +498,9 @@ const FormationIAPython = () => {
           <p className="text-xs text-gray-500 text-center max-w-2xl mx-auto">
             RS6962 – Programmer et automatiser des tâches avec Python (Tosa). Date d'échéance de l'enregistrement : 18/12/2027.
           </p>
+          <p className="text-xs text-gray-400 text-center max-w-2xl mx-auto mt-2">
+            Ces informations sont mises à jour régulièrement. Dernière mise à jour : 28/08/2026.
+          </p>
         </div>
       </section>
     </div>
