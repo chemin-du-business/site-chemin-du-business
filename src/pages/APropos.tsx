@@ -200,6 +200,9 @@ const APropos = () => {
                 <FileText className="w-4 h-4" />
                 Consulter le certificat Qualiopi (PDF)
               </a>
+              <p className="text-xs text-gray-400 mt-3">
+                Document contrôlé régulièrement. Dernière mise à jour : 28/08/2026.
+              </p>
             </div>
           </div>
         </div>
